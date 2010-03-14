@@ -1,0 +1,13 @@
+kernel vec4 softRect(sampler image, float radius)
+{
+	vec4 sf;
+	vec2 v = samplerCoord(image);
+	vec2 s = samplerSize(image);
+	vec4 pixel = sample(image, v);
+	sf = vec4(v, s - v); // left bottom right top
+	sf *= 1.0 / radius; // recip will be hoisted out of the code by CI, since radius is a constant parameter to this kernel
+	sf = smoothstep(0.0, 1.0, clamp(sf, 0.0, 1.0)); // make all 4 functions rounded
+	pixel.a = sf.x * sf.y * sf.z * sf.w; // product of the 4 functions will produce a nice alpha
+	
+	return vec4(pixel.rgb*pixel.a,pixel.a);
+}

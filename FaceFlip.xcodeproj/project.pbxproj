@@ -1,0 +1,348 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		50D8CB7F114C479F00FC9D7D /* haarcascade_frontalface_alt2.xml in Resources */ = {isa = PBXBuildFile; fileRef = 50D8CB7E114C479F00FC9D7D /* haarcascade_frontalface_alt2.xml */; };
+		50D8CBC8114C499500FC9D7D /* OpenCV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50D8CBC7114C499500FC9D7D /* OpenCV.framework */; };
+		50D8CC77114C4EA100FC9D7D /* OpenCV.framework in Copy Frameworks (1) */ = {isa = PBXBuildFile; fileRef = 50D8CBC7114C499500FC9D7D /* OpenCV.framework */; };
+		50D8CD14114C535000FC9D7D /* FeatherEdge.plugin in Copy Plugins */ = {isa = PBXBuildFile; fileRef = 50D8CD03114C512900FC9D7D /* FeatherEdge.plugin */; };
+		50D8CD1A114C539A00FC9D7D /* FaceFlip.m in Sources */ = {isa = PBXBuildFile; fileRef = 50D8CD19114C539A00FC9D7D /* FaceFlip.m */; };
+		50D8CE14114C5FEE00FC9D7D /* IplImageWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 50D8CE13114C5FEE00FC9D7D /* IplImageWrapper.m */; };
+		50D8CE19114C5FFD00FC9D7D /* HaarClassifierWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 50D8CE18114C5FFD00FC9D7D /* HaarClassifierWrapper.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		50D8CD02114C512900FC9D7D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 50D8CCFC114C512900FC9D7D /* FeatherEdge.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8D576316048677EA00EA77CD;
+			remoteInfo = FeatherEdge;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		50D8CC72114C4E3C00FC9D7D /* Copy Frameworks (1) */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				50D8CC77114C4EA100FC9D7D /* OpenCV.framework in Copy Frameworks (1) */,
+			);
+			name = "Copy Frameworks (1)";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50D8CD15114C536E00FC9D7D /* Copy Plugins */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				50D8CD14114C535000FC9D7D /* FeatherEdge.plugin in Copy Plugins */,
+			);
+			name = "Copy Plugins";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		50D8CB7E114C479F00FC9D7D /* haarcascade_frontalface_alt2.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_frontalface_alt2.xml; sourceTree = "<group>"; };
+		50D8CBC7114C499500FC9D7D /* OpenCV.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OpenCV.framework; sourceTree = "<group>"; };
+		50D8CC3B114C4AA900FC9D7D /* CTUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTUtil.h; sourceTree = "<group>"; };
+		50D8CC3C114C4AA900FC9D7D /* CTContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTContext.h; sourceTree = "<group>"; };
+		50D8CC3D114C4AA900FC9D7D /* CTEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTEffect.h; sourceTree = "<group>"; };
+		50D8CCFC114C512900FC9D7D /* FeatherEdge.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FeatherEdge.xcodeproj; path = FeatherEdge/FeatherEdge.xcodeproj; sourceTree = SOURCE_ROOT; };
+		50D8CD18114C539A00FC9D7D /* FaceFlip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FaceFlip.h; sourceTree = "<group>"; };
+		50D8CD19114C539A00FC9D7D /* FaceFlip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FaceFlip.m; sourceTree = "<group>"; };
+		50D8CE12114C5FEE00FC9D7D /* IplImageWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IplImageWrapper.h; sourceTree = "<group>"; };
+		50D8CE13114C5FEE00FC9D7D /* IplImageWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IplImageWrapper.m; sourceTree = "<group>"; };
+		50D8CE17114C5FFD00FC9D7D /* HaarClassifierWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HaarClassifierWrapper.h; sourceTree = "<group>"; };
+		50D8CE18114C5FFD00FC9D7D /* HaarClassifierWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HaarClassifierWrapper.m; sourceTree = "<group>"; };
+		8D576316048677EA00EA77CD /* FaceFlip.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FaceFlip.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D576317048677EA00EA77CD /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D576313048677EA00EA77CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50D8CBC8114C499500FC9D7D /* OpenCV.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		089C166AFE841209C02AAC07 /* FaceFlip */ = {
+			isa = PBXGroup;
+			children = (
+				08FB77AFFE84173DC02AAC07 /* Source */,
+				50D8CB85114C47C800FC9D7D /* Image Units */,
+				50D8CC3A114C4A9400FC9D7D /* CTHeaders */,
+				089C167CFE841241C02AAC07 /* Resources */,
+				089C1671FE841209C02AAC07 /* Frameworks */,
+				19C28FB6FE9D52B211CA2CBB /* Products */,
+			);
+			name = FaceFlip;
+			sourceTree = "<group>";
+		};
+		089C1671FE841209C02AAC07 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				50D8CBC7114C499500FC9D7D /* OpenCV.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		089C167CFE841241C02AAC07 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				50D8CB7E114C479F00FC9D7D /* haarcascade_frontalface_alt2.xml */,
+				8D576317048677EA00EA77CD /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		08FB77AFFE84173DC02AAC07 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				50D8CDE5114C5D4600FC9D7D /* OpenCV Wrappers */,
+				50D8CD18114C539A00FC9D7D /* FaceFlip.h */,
+				50D8CD19114C539A00FC9D7D /* FaceFlip.m */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		19C28FB6FE9D52B211CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D576316048677EA00EA77CD /* FaceFlip.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		50D8CB85114C47C800FC9D7D /* Image Units */ = {
+			isa = PBXGroup;
+			children = (
+				50D8CCFC114C512900FC9D7D /* FeatherEdge.xcodeproj */,
+			);
+			name = "Image Units";
+			sourceTree = "<group>";
+		};
+		50D8CC3A114C4A9400FC9D7D /* CTHeaders */ = {
+			isa = PBXGroup;
+			children = (
+				50D8CC3B114C4AA900FC9D7D /* CTUtil.h */,
+				50D8CC3C114C4AA900FC9D7D /* CTContext.h */,
+				50D8CC3D114C4AA900FC9D7D /* CTEffect.h */,
+			);
+			name = CTHeaders;
+			sourceTree = "<group>";
+		};
+		50D8CCFF114C512900FC9D7D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				50D8CD03114C512900FC9D7D /* FeatherEdge.plugin */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		50D8CDE5114C5D4600FC9D7D /* OpenCV Wrappers */ = {
+			isa = PBXGroup;
+			children = (
+				50D8CE12114C5FEE00FC9D7D /* IplImageWrapper.h */,
+				50D8CE13114C5FEE00FC9D7D /* IplImageWrapper.m */,
+				50D8CE17114C5FFD00FC9D7D /* HaarClassifierWrapper.h */,
+				50D8CE18114C5FFD00FC9D7D /* HaarClassifierWrapper.m */,
+			);
+			name = "OpenCV Wrappers";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D57630D048677EA00EA77CD /* FaceFlip */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB911A08733D790010E9CD /* Build configuration list for PBXNativeTarget "FaceFlip" */;
+			buildPhases = (
+				8D57630F048677EA00EA77CD /* Resources */,
+				8D576311048677EA00EA77CD /* Sources */,
+				8D576313048677EA00EA77CD /* Frameworks */,
+				50D8CC72114C4E3C00FC9D7D /* Copy Frameworks (1) */,
+				50D8CD15114C536E00FC9D7D /* Copy Plugins */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FaceFlip;
+			productInstallPath = "$(HOME)/Library/Bundles";
+			productName = FaceFlip;
+			productReference = 8D576316048677EA00EA77CD /* FaceFlip.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		089C1669FE841209C02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB911E08733D790010E9CD /* Build configuration list for PBXProject "FaceFlip" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			mainGroup = 089C166AFE841209C02AAC07 /* FaceFlip */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 50D8CCFF114C512900FC9D7D /* Products */;
+					ProjectRef = 50D8CCFC114C512900FC9D7D /* FeatherEdge.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				8D57630D048677EA00EA77CD /* FaceFlip */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		50D8CD03114C512900FC9D7D /* FeatherEdge.plugin */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = FeatherEdge.plugin;
+			remoteRef = 50D8CD02114C512900FC9D7D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D57630F048677EA00EA77CD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50D8CB7F114C479F00FC9D7D /* haarcascade_frontalface_alt2.xml in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D576311048677EA00EA77CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50D8CD1A114C539A00FC9D7D /* FaceFlip.m in Sources */,
+				50D8CE14114C5FEE00FC9D7D /* IplImageWrapper.m in Sources */,
+				50D8CE19114C5FFD00FC9D7D /* HaarClassifierWrapper.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB911B08733D790010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				DEPLOYMENT_LOCATION = NO;
+				DEPLOYMENT_POSTPROCESSING = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = /Applications/CamTwist/Effects;
+				OTHER_LDFLAGS = (
+					"-flat_namespace",
+					"-undefined",
+					suppress,
+				);
+				PRODUCT_NAME = FaceFlip;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		1DEB911C08733D790010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_MODEL_TUNING = G5;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = /Applications/CamTwist/Effects;
+				OTHER_LDFLAGS = (
+					"-flat_namespace",
+					"-undefined",
+					suppress,
+				);
+				PRODUCT_NAME = FaceFlip;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		1DEB911F08733D790010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.6;
+			};
+			name = Debug;
+		};
+		1DEB912008733D790010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.6;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB911A08733D790010E9CD /* Build configuration list for PBXNativeTarget "FaceFlip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB911B08733D790010E9CD /* Debug */,
+				1DEB911C08733D790010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB911E08733D790010E9CD /* Build configuration list for PBXProject "FaceFlip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB911F08733D790010E9CD /* Debug */,
+				1DEB912008733D790010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 089C1669FE841209C02AAC07 /* Project object */;
+}
