@@ -15,27 +15,24 @@
 	return @"Face Flip";
 }
 
-- (id) initWithCoder:(NSCoder *) coder
-{
-	return [self init];
-}
-
 - (id) initWithContext:(CTContext *) ctContext
 {
-	self = [super initWithContext:ctContext];
-	
- CGSize videoSize = [[self context] size];
-	
- cvImage = [[IplImageWrapper alloc] initGrayscaleWithSize:videoSize];
-	
-	NSString *classifierPath = [[NSBundle bundleForClass:[self class]] pathForResource:@"haarcascade_frontalface_alt2" ofType:@"xml"];
-	faceClassifier = [[HaarClassifierWrapper alloc] initWithClassifierFile:classifierPath];
-	
-	NSString *featherPath = [[[NSBundle bundleForClass:[self class]] builtInPlugInsPath] stringByAppendingPathComponent:@"FeatherEdge.plugin"];
-	[CIPlugIn loadPlugIn:[NSURL fileURLWithPath:featherPath] allowNonExecutable:NO];
-	
- [NSBundle loadNibNamed:@"inspector" owner:self];
- 
+	if(self = [super initWithContext:ctContext])
+    {
+        
+        CGSize videoSize = [[self context] size];
+        
+        cvImage = [[IplImageWrapper alloc] initGrayscaleWithSize:videoSize];
+        
+        NSString *classifierPath = [[NSBundle bundleForClass:[self class]] pathForResource:@"haarcascade_frontalface_alt2" ofType:@"xml"];
+        faceClassifier = [[HaarClassifierWrapper alloc] initWithClassifierFile:classifierPath];
+        
+        NSString *featherPath = [[[NSBundle bundleForClass:[self class]] builtInPlugInsPath] stringByAppendingPathComponent:@"FeatherEdge.plugin"];
+        [CIPlugIn loadPlugIn:[NSURL fileURLWithPath:featherPath] allowNonExecutable:NO];
+        
+        [NSBundle loadNibNamed:@"inspector" owner:self];
+    }
+        
 	return self;
 }
 
