@@ -8,6 +8,8 @@
 
 @implementation FaceFlip
 
+@synthesize shouldFlipFrame = mShouldFlipFrame;
+
 + (NSString *) name
 {
 	return @"Face Flip";
@@ -32,6 +34,8 @@
 	NSString *featherPath = [[[NSBundle bundleForClass:[self class]] builtInPlugInsPath] stringByAppendingPathComponent:@"FeatherEdge.plugin"];
 	[CIPlugIn loadPlugIn:[NSURL fileURLWithPath:featherPath] allowNonExecutable:NO];
 	
+ [NSBundle loadNibNamed:@"inspector" owner:self];
+ 
 	return self;
 }
 
@@ -67,6 +71,11 @@
 	return [featherEdge valueForKey:@"outputImage"];
 }
 
+- (NSView*) inspectorView
+{
+    return inspectorView;
+}
+
 - (void) doit
 {
 	// Grab video frame from pixel buffer
@@ -97,16 +106,18 @@
 		
 		result = [overComposite valueForKey:@"outputImage"];
 	}
-	
-	// Flip composited image upside down
-	NSAffineTransform *flipTransform = [NSAffineTransform transform];
-	[flipTransform translateXBy:0 yBy:videoHeight];
-	[flipTransform scaleXBy:1 yBy:-1];
-	CIFilter *flipFilter = [CIFilter filterWithName:@"CIAffineTransform"];
-	[flipFilter setValue:result forKey:@"inputImage"];
-	[flipFilter setValue:flipTransform forKey:@"inputTransform"];
 
-	result = [flipFilter valueForKey:@"outputImage"];
+    if(mShouldFlipFrame) {
+        // Flip composited image upside down
+        NSAffineTransform *flipTransform = [NSAffineTransform transform];
+        [flipTransform translateXBy:0 yBy:cvImage.size.height];
+        [flipTransform scaleXBy:1 yBy:-1];
+        CIFilter *flipFilter = [CIFilter filterWithName:@"CIAffineTransform"];
+        [flipFilter setValue:result forKey:@"inputImage"];
+        [flipFilter setValue:flipTransform forKey:@"inputTransform"];
+
+        result = [flipFilter valueForKey:@"outputImage"];
+    }
 	
 	// Clear previous drawing
 	[[self context] reset:YES];

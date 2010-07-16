@@ -8,8 +8,12 @@
 {	
 	IplImageWrapper* cvImage;
 	HaarClassifierWrapper* faceClassifier;
+    
+    IBOutlet NSView* inspectorView;
+    
+    BOOL mShouldFlipFrame;
 }
 
-@end
+@property(nonatomic, assign) BOOL shouldFlipFrame;
 
 @end
