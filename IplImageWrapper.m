@@ -4,13 +4,13 @@
 
 @synthesize iplImage;
 
-- (id) initGrayscaleWithWidth:(int)width height:(int)height
+- (id) initGrayscaleWithSize:(CGSize)frameSize
 {
 	self = [super init];
 	
 	if( self != nil )
 	{
-		iplImage = cvCreateImage(cvSize(width, height), IPL_DEPTH_8U, 1);
+		iplImage = cvCreateImage(cvSize(frameSize.width, frameSize.height), IPL_DEPTH_8U, 1);
 		
 		if(!iplImage) return nil;
 	}
@@ -41,6 +41,11 @@
 						fromRect: [ciimage extent] ];
 	
 	[bitmapBacking release];
+}
+
+- (CGSize) size
+{
+    return CGSizeMake( (self.iplImage)->width, (self.iplImage)->height );
 }
 
 - (void) dealloc

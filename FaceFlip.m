@@ -22,10 +22,9 @@
 {
 	self = [super initWithContext:ctContext];
 	
-	videoWidth = [[self context] size].width;
-	videoHeight = [[self context] size].height;
+ CGSize videoSize = [[self context] size];
 	
-	cvImage = [[IplImageWrapper alloc] initGrayscaleWithWidth:videoWidth height:videoHeight];
+ cvImage = [[IplImageWrapper alloc] initGrayscaleWithSize:videoSize];
 	
 	NSString *classifierPath = [[NSBundle bundleForClass:[self class]] pathForResource:@"haarcascade_frontalface_alt2" ofType:@"xml"];
 	faceClassifier = [[HaarClassifierWrapper alloc] initWithClassifierFile:classifierPath];

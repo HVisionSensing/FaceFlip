@@ -6,7 +6,8 @@
 	IplImage* iplImage;
 }
 @property (readonly) IplImage* iplImage;
+@property (readonly) CGSize size;
 
-- (id) initGrayscaleWithWidth:(int)width height:(int)height;
+- (id) initGrayscaleWithSize:(CGSize)frameSize;
 - (void) drawGrayscaleFromCIImage:(CIImage *)ciimage;
 @end
