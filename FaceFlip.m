@@ -1,5 +1,11 @@
 #import "FaceFlip.h"
 
+@interface FaceFlip(private)
+-(void) initCV;
+-(void) initCI;
+-(CIImage *) flippedFaceAt:(CIVector *)faceRect fromImage:(CIImage *)ciimage;
+@end
+
 @implementation FaceFlip
 
 + (NSString *) name

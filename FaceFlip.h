@@ -15,8 +15,4 @@
 
 @end
 
-@interface FaceFlip(private)
--(void) initCV;
--(void) initCI;
--(CIImage *) flippedFaceAt:(CIVector *)faceRect fromImage:(CIImage *)ciimage;
 @end
