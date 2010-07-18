@@ -1,8 +1,7 @@
 #import "CTEffect.h"
-#import "IplImageWrapper.h"
-#import "HaarClassifierWrapper.h"
 
-#define FEATHER_FACTOR 3.5
+@class IplImageWrapper;
+@class HaarClassifierWrapper;
 
 @interface FaceFlip : CTEffect
 {	

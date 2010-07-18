@@ -1,6 +1,4 @@
-#import <Cocoa/Cocoa.h>
-#import <OpenCV/cv.h>
-#import <QuartzCore/QuartzCore.h>
+#import <OpenCV/cxtypes.h>
 
 @interface IplImageWrapper : NSObject {
 	IplImage* iplImage;

@@ -1,8 +1,11 @@
 #import "FaceFlip.h"
 
-@interface FaceFlip(private)
--(void) initCV;
--(void) initCI;
+#import "IplImageWrapper.h"
+#import "HaarClassifierWrapper.h"
+
+#define FEATHER_FACTOR 3.5
+
+@interface FaceFlip(Private)
 -(CIImage *) flippedFaceAt:(CIVector *)faceRect fromImage:(CIImage *)ciimage;
 @end
 

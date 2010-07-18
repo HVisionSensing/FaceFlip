@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		50A7B35811F3771700C51370 /* inspector.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50A7B35711F3771700C51370 /* inspector.xib */; };
+		50A7B36811F3777900C51370 /* inspector.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50A7B36711F3777900C51370 /* inspector.xib */; };
 		50D8CB7F114C479F00FC9D7D /* haarcascade_frontalface_alt2.xml in Resources */ = {isa = PBXBuildFile; fileRef = 50D8CB7E114C479F00FC9D7D /* haarcascade_frontalface_alt2.xml */; };
 		50D8CBC8114C499500FC9D7D /* OpenCV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50D8CBC7114C499500FC9D7D /* OpenCV.framework */; };
 		50D8CC77114C4EA100FC9D7D /* OpenCV.framework in Copy Frameworks (1) */ = {isa = PBXBuildFile; fileRef = 50D8CBC7114C499500FC9D7D /* OpenCV.framework */; };
@@ -18,6 +18,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		507F600511F37224005C6D6D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 50D8CCFC114C512900FC9D7D /* FeatherEdge.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 8D57630D048677EA00EA77CD;
+			remoteInfo = FeatherEdge;
+		};
 		50D8CD02114C512900FC9D7D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 50D8CCFC114C512900FC9D7D /* FeatherEdge.xcodeproj */;
@@ -53,7 +60,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		50A7B35711F3771700C51370 /* inspector.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = inspector.xib; sourceTree = "<group>"; };
+		507F5F8211F25DB6005C6D6D /* FaceFlip_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FaceFlip_Prefix.pch; sourceTree = "<group>"; };
+		50A7B36711F3777900C51370 /* inspector.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = inspector.xib; sourceTree = "<group>"; };
 		50D8CB7E114C479F00FC9D7D /* haarcascade_frontalface_alt2.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_frontalface_alt2.xml; sourceTree = "<group>"; };
 		50D8CBC7114C499500FC9D7D /* OpenCV.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OpenCV.framework; sourceTree = "<group>"; };
 		50D8CC3B114C4AA900FC9D7D /* CTUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTUtil.h; sourceTree = "<group>"; };
@@ -86,7 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				08FB77AFFE84173DC02AAC07 /* Source */,
-				50D8CB85114C47C800FC9D7D /* Image Units */,
+				507F5F7F11F25D90005C6D6D /* Other Sources */,
 				50D8CC3A114C4A9400FC9D7D /* CTHeaders */,
 				089C167CFE841241C02AAC07 /* Resources */,
 				089C1671FE841209C02AAC07 /* Frameworks */,
@@ -106,7 +114,7 @@
 		089C167CFE841241C02AAC07 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				50A7B35711F3771700C51370 /* inspector.xib */,
+				50A7B36711F3777900C51370 /* inspector.xib */,
 				50D8CB7E114C479F00FC9D7D /* haarcascade_frontalface_alt2.xml */,
 				8D576317048677EA00EA77CD /* Info.plist */,
 			);
@@ -126,9 +134,18 @@
 		19C28FB6FE9D52B211CA2CBB /* Products */ = {
 			isa = PBXGroup;
 			children = (
+				50D8CB85114C47C800FC9D7D /* Image Units */,
 				8D576316048677EA00EA77CD /* FaceFlip.bundle */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		507F5F7F11F25D90005C6D6D /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				507F5F8211F25DB6005C6D6D /* FaceFlip_Prefix.pch */,
+			);
+			name = "Other Sources";
 			sourceTree = "<group>";
 		};
 		50D8CB85114C47C800FC9D7D /* Image Units */ = {
@@ -184,6 +201,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				507F600611F37224005C6D6D /* PBXTargetDependency */,
 			);
 			name = FaceFlip;
 			productInstallPath = "$(HOME)/Library/Bundles";
@@ -230,7 +248,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				50D8CB7F114C479F00FC9D7D /* haarcascade_frontalface_alt2.xml in Resources */,
-				50A7B35811F3771700C51370 /* inspector.xib in Resources */,
+				50A7B36811F3777900C51370 /* inspector.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,6 +267,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		507F600611F37224005C6D6D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FeatherEdge;
+			targetProxy = 507F600511F37224005C6D6D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
 		1DEB911B08733D790010E9CD /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -265,6 +291,7 @@
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREFIX_HEADER = FaceFlip_Prefix.pch;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = /Applications/CamTwist/Effects;
 				OTHER_LDFLAGS = (
@@ -287,6 +314,7 @@
 					"\"$(SRCROOT)\"",
 				);
 				GCC_MODEL_TUNING = G5;
+				GCC_PREFIX_HEADER = FaceFlip_Prefix.pch;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = /Applications/CamTwist/Effects;
 				OTHER_LDFLAGS = (
@@ -305,6 +333,7 @@
 				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -318,6 +347,7 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				PREBINDING = NO;

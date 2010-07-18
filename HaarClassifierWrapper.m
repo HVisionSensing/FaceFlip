@@ -1,5 +1,12 @@
 #import "HaarClassifierWrapper.h"
 
+#import "IplImageWrapper.h"
+
+#import <OpenCV/OpenCV.h>
+
+#define HAAR_SCALE_FACTOR	1.2
+#define HAAR_MIN_NEIGHBORS	2
+#define HAAR_FLAGS			CV_HAAR_DO_CANNY_PRUNING
 
 @implementation HaarClassifierWrapper
 
