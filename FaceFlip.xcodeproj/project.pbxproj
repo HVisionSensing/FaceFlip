@@ -6,8 +6,24 @@
 	objectVersion = 45;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		50A7B38311F379BF00C51370 /* Build & Install */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 50A7B3BC11F379FE00C51370 /* Build configuration list for PBXAggregateTarget "Build & Install" */;
+			buildPhases = (
+				50A7B38211F379BF00C51370 /* CopyFiles */,
+			);
+			dependencies = (
+				50A7B38711F379D200C51370 /* PBXTargetDependency */,
+			);
+			name = "Build & Install";
+			productName = "Build & Copy";
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		50A7B36811F3777900C51370 /* inspector.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50A7B36711F3777900C51370 /* inspector.xib */; };
+		50A7B3C511F37A2E00C51370 /* FaceFlip.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8D576316048677EA00EA77CD /* FaceFlip.bundle */; };
 		50D8CB7F114C479F00FC9D7D /* haarcascade_frontalface_alt2.xml in Resources */ = {isa = PBXBuildFile; fileRef = 50D8CB7E114C479F00FC9D7D /* haarcascade_frontalface_alt2.xml */; };
 		50D8CBC8114C499500FC9D7D /* OpenCV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50D8CBC7114C499500FC9D7D /* OpenCV.framework */; };
 		50D8CC77114C4EA100FC9D7D /* OpenCV.framework in Copy Frameworks (1) */ = {isa = PBXBuildFile; fileRef = 50D8CBC7114C499500FC9D7D /* OpenCV.framework */; };
@@ -25,6 +41,13 @@
 			remoteGlobalIDString = 8D57630D048677EA00EA77CD;
 			remoteInfo = FeatherEdge;
 		};
+		50A7B38611F379D200C51370 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 089C1669FE841209C02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8D57630D048677EA00EA77CD /* FaceFlip */;
+			remoteInfo = FaceFlip;
+		};
 		50D8CD02114C512900FC9D7D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 50D8CCFC114C512900FC9D7D /* FeatherEdge.xcodeproj */;
@@ -35,6 +58,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		50A7B38211F379BF00C51370 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /Applications/CamTwist/Effects;
+			dstSubfolderSpec = 0;
+			files = (
+				50A7B3C511F37A2E00C51370 /* FaceFlip.bundle in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		50D8CC72114C4E3C00FC9D7D /* Copy Frameworks (1) */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -228,6 +261,7 @@
 			projectRoot = "";
 			targets = (
 				8D57630D048677EA00EA77CD /* FaceFlip */,
+				50A7B38311F379BF00C51370 /* Build & Install */,
 			);
 		};
 /* End PBXProject section */
@@ -272,6 +306,11 @@
 			isa = PBXTargetDependency;
 			name = FeatherEdge;
 			targetProxy = 507F600511F37224005C6D6D /* PBXContainerItemProxy */;
+		};
+		50A7B38711F379D200C51370 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8D57630D048677EA00EA77CD /* FaceFlip */;
+			targetProxy = 50A7B38611F379D200C51370 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -355,6 +394,27 @@
 			};
 			name = Release;
 		};
+		50A7B38411F379C000C51370 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PRODUCT_NAME = "Build & Copy";
+			};
+			name = Debug;
+		};
+		50A7B38511F379C000C51370 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				PRODUCT_NAME = "Build & Copy";
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -372,6 +432,15 @@
 			buildConfigurations = (
 				1DEB911F08733D790010E9CD /* Debug */,
 				1DEB912008733D790010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		50A7B3BC11F379FE00C51370 /* Build configuration list for PBXAggregateTarget "Build & Install" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50A7B38411F379C000C51370 /* Debug */,
+				50A7B38511F379C000C51370 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
