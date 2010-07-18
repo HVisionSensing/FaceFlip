@@ -1,3 +1,6 @@
+// Filter code by George Toledo
+// http://www.georgetoledo.com/2010/01/attack-of-jaggies-qcs-crappy-aliasing.html
+
 kernel vec4 softRect(sampler image, float radius)
 {
 	vec4 sf;
