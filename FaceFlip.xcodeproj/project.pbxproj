@@ -24,9 +24,9 @@
 /* Begin PBXBuildFile section */
 		50A7B36811F3777900C51370 /* inspector.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50A7B36711F3777900C51370 /* inspector.xib */; };
 		50A7B3C511F37A2E00C51370 /* FaceFlip.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8D576316048677EA00EA77CD /* FaceFlip.bundle */; };
+		50D0D65D11F3868A00CAE72C /* OpenCV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50D0D65C11F3868A00CAE72C /* OpenCV.framework */; };
+		50D0D67211F3869300CAE72C /* OpenCV.framework in Copy Frameworks (1) */ = {isa = PBXBuildFile; fileRef = 50D0D65C11F3868A00CAE72C /* OpenCV.framework */; };
 		50D8CB7F114C479F00FC9D7D /* haarcascade_frontalface_alt2.xml in Resources */ = {isa = PBXBuildFile; fileRef = 50D8CB7E114C479F00FC9D7D /* haarcascade_frontalface_alt2.xml */; };
-		50D8CBC8114C499500FC9D7D /* OpenCV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50D8CBC7114C499500FC9D7D /* OpenCV.framework */; };
-		50D8CC77114C4EA100FC9D7D /* OpenCV.framework in Copy Frameworks (1) */ = {isa = PBXBuildFile; fileRef = 50D8CBC7114C499500FC9D7D /* OpenCV.framework */; };
 		50D8CD14114C535000FC9D7D /* FeatherEdge.plugin in Copy Plugins */ = {isa = PBXBuildFile; fileRef = 50D8CD03114C512900FC9D7D /* FeatherEdge.plugin */; };
 		50D8CD1A114C539A00FC9D7D /* FaceFlip.m in Sources */ = {isa = PBXBuildFile; fileRef = 50D8CD19114C539A00FC9D7D /* FaceFlip.m */; };
 		50D8CE14114C5FEE00FC9D7D /* IplImageWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 50D8CE13114C5FEE00FC9D7D /* IplImageWrapper.m */; };
@@ -45,7 +45,7 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = 089C1669FE841209C02AAC07 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 8D57630D048677EA00EA77CD /* FaceFlip */;
+			remoteGlobalIDString = 8D57630D048677EA00EA77CD;
 			remoteInfo = FaceFlip;
 		};
 		50D8CD02114C512900FC9D7D /* PBXContainerItemProxy */ = {
@@ -74,7 +74,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				50D8CC77114C4EA100FC9D7D /* OpenCV.framework in Copy Frameworks (1) */,
+				50D0D67211F3869300CAE72C /* OpenCV.framework in Copy Frameworks (1) */,
 			);
 			name = "Copy Frameworks (1)";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -93,22 +93,22 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		507F5F8211F25DB6005C6D6D /* FaceFlip_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FaceFlip_Prefix.pch; sourceTree = "<group>"; };
-		50A7B36711F3777900C51370 /* inspector.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = inspector.xib; sourceTree = "<group>"; };
-		50D8CB7E114C479F00FC9D7D /* haarcascade_frontalface_alt2.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_frontalface_alt2.xml; sourceTree = "<group>"; };
-		50D8CBC7114C499500FC9D7D /* OpenCV.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OpenCV.framework; sourceTree = "<group>"; };
-		50D8CC3B114C4AA900FC9D7D /* CTUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTUtil.h; sourceTree = "<group>"; };
-		50D8CC3C114C4AA900FC9D7D /* CTContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTContext.h; sourceTree = "<group>"; };
-		50D8CC3D114C4AA900FC9D7D /* CTEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTEffect.h; sourceTree = "<group>"; };
+		507F5F8211F25DB6005C6D6D /* FaceFlip_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FaceFlip_Prefix.pch; path = include/FaceFlip_Prefix.pch; sourceTree = "<group>"; };
+		50A7B36711F3777900C51370 /* inspector.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = inspector.xib; path = etc/inspector.xib; sourceTree = "<group>"; };
+		50CDC5BA11F387FC000BE1F3 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = etc/Info.plist; sourceTree = "<group>"; };
+		50D0D65C11F3868A00CAE72C /* OpenCV.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenCV.framework; path = vendor/OpenCV.framework; sourceTree = "<group>"; };
+		50D8CB7E114C479F00FC9D7D /* haarcascade_frontalface_alt2.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = haarcascade_frontalface_alt2.xml; path = etc/haarcascade_frontalface_alt2.xml; sourceTree = "<group>"; };
+		50D8CC3B114C4AA900FC9D7D /* CTUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CTUtil.h; path = vendor/CTUtil.h; sourceTree = "<group>"; };
+		50D8CC3C114C4AA900FC9D7D /* CTContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CTContext.h; path = vendor/CTContext.h; sourceTree = "<group>"; };
+		50D8CC3D114C4AA900FC9D7D /* CTEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CTEffect.h; path = vendor/CTEffect.h; sourceTree = "<group>"; };
 		50D8CCFC114C512900FC9D7D /* FeatherEdge.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FeatherEdge.xcodeproj; path = FeatherEdge/FeatherEdge.xcodeproj; sourceTree = SOURCE_ROOT; };
-		50D8CD18114C539A00FC9D7D /* FaceFlip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FaceFlip.h; sourceTree = "<group>"; };
-		50D8CD19114C539A00FC9D7D /* FaceFlip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FaceFlip.m; sourceTree = "<group>"; };
-		50D8CE12114C5FEE00FC9D7D /* IplImageWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IplImageWrapper.h; sourceTree = "<group>"; };
-		50D8CE13114C5FEE00FC9D7D /* IplImageWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IplImageWrapper.m; sourceTree = "<group>"; };
-		50D8CE17114C5FFD00FC9D7D /* HaarClassifierWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HaarClassifierWrapper.h; sourceTree = "<group>"; };
-		50D8CE18114C5FFD00FC9D7D /* HaarClassifierWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HaarClassifierWrapper.m; sourceTree = "<group>"; };
+		50D8CD18114C539A00FC9D7D /* FaceFlip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FaceFlip.h; path = include/FaceFlip.h; sourceTree = "<group>"; };
+		50D8CD19114C539A00FC9D7D /* FaceFlip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FaceFlip.m; path = src/FaceFlip.m; sourceTree = "<group>"; };
+		50D8CE12114C5FEE00FC9D7D /* IplImageWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IplImageWrapper.h; path = include/IplImageWrapper.h; sourceTree = "<group>"; };
+		50D8CE13114C5FEE00FC9D7D /* IplImageWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IplImageWrapper.m; path = src/IplImageWrapper.m; sourceTree = "<group>"; };
+		50D8CE17114C5FFD00FC9D7D /* HaarClassifierWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HaarClassifierWrapper.h; path = include/HaarClassifierWrapper.h; sourceTree = "<group>"; };
+		50D8CE18114C5FFD00FC9D7D /* HaarClassifierWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HaarClassifierWrapper.m; path = src/HaarClassifierWrapper.m; sourceTree = "<group>"; };
 		8D576316048677EA00EA77CD /* FaceFlip.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FaceFlip.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		8D576317048677EA00EA77CD /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,7 +116,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				50D8CBC8114C499500FC9D7D /* OpenCV.framework in Frameworks */,
+				50D0D65D11F3868A00CAE72C /* OpenCV.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,7 +139,7 @@
 		089C1671FE841209C02AAC07 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				50D8CBC7114C499500FC9D7D /* OpenCV.framework */,
+				50D0D65C11F3868A00CAE72C /* OpenCV.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -147,9 +147,9 @@
 		089C167CFE841241C02AAC07 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				50CDC5BA11F387FC000BE1F3 /* Info.plist */,
 				50A7B36711F3777900C51370 /* inspector.xib */,
 				50D8CB7E114C479F00FC9D7D /* haarcascade_frontalface_alt2.xml */,
-				8D576317048677EA00EA77CD /* Info.plist */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -325,13 +325,14 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/vendor\"",
 				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREFIX_HEADER = FaceFlip_Prefix.pch;
-				INFOPLIST_FILE = Info.plist;
+				GCC_PREFIX_HEADER = include/FaceFlip_Prefix.pch;
+				INFOPLIST_FILE = etc/Info.plist;
 				INSTALL_PATH = /Applications/CamTwist/Effects;
 				OTHER_LDFLAGS = (
 					"-flat_namespace",
@@ -351,10 +352,11 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/vendor\"",
 				);
 				GCC_MODEL_TUNING = G5;
-				GCC_PREFIX_HEADER = FaceFlip_Prefix.pch;
-				INFOPLIST_FILE = Info.plist;
+				GCC_PREFIX_HEADER = include/FaceFlip_Prefix.pch;
+				INFOPLIST_FILE = etc/Info.plist;
 				INSTALL_PATH = /Applications/CamTwist/Effects;
 				OTHER_LDFLAGS = (
 					"-flat_namespace",
