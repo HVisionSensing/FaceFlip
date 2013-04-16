@@ -2,7 +2,7 @@
 
 #import "IplImageWrapper.h"
 
-#import <OpenCV/OpenCV.h>
+#import "cv.h"
 
 #define HAAR_SCALE_FACTOR	1.2
 #define HAAR_MIN_NEIGHBORS	2
@@ -31,7 +31,7 @@
 {
 	CvSeq* cvObjects = cvHaarDetectObjects([image iplImage], classifier, storage,
 									   HAAR_SCALE_FACTOR, HAAR_MIN_NEIGHBORS,
-									   HAAR_FLAGS, cvSize(30, 30));
+									   HAAR_FLAGS, cvSize(30, 30),cvSize(50, 50));
 	
 	int numberOfObjects = cvObjects ? cvObjects->total : 0;
 	

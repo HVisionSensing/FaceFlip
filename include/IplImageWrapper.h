@@ -1,4 +1,4 @@
-#import <OpenCV/cxtypes.h>
+#import "cv.h"
 
 @interface IplImageWrapper : NSObject {
 	IplImage* iplImage;

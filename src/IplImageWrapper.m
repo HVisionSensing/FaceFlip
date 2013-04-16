@@ -1,7 +1,9 @@
 #import "IplImageWrapper.h"
 
 #import <QuartzCore/QuartzCore.h>
-#import <OpenCV/OpenCV.h>
+#import "cv.h"
+#import "highgui.h"
+#import "cxcore.h"
 
 @implementation IplImageWrapper
 

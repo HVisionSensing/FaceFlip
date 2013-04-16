@@ -651,6 +651,8 @@
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREFIX_HEADER = include/FaceFlip_Prefix.pch;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = /Users/zhoushiwei/Desktop/Github/FaceFlip/vendor/OpenCV/include;
 				INFOPLIST_FILE = etc/Info.plist;
 				INSTALL_PATH = /Applications/CamTwist/Effects;
 				LIBRARY_SEARCH_PATHS = (
@@ -663,6 +665,7 @@
 					suppress,
 				);
 				PRODUCT_NAME = FaceFlip;
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
 			};
 			name = Debug;
@@ -679,6 +682,8 @@
 				);
 				GCC_MODEL_TUNING = G5;
 				GCC_PREFIX_HEADER = include/FaceFlip_Prefix.pch;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = /Users/zhoushiwei/Desktop/Github/FaceFlip/vendor/OpenCV/include;
 				INFOPLIST_FILE = etc/Info.plist;
 				INSTALL_PATH = /Applications/CamTwist/Effects;
 				LIBRARY_SEARCH_PATHS = (
@@ -691,6 +696,7 @@
 					suppress,
 				);
 				PRODUCT_NAME = FaceFlip;
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
 			};
 			name = Release;

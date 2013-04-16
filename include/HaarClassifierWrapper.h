@@ -1,5 +1,4 @@
-#import <OpenCV/cxtypes.h>
-#import <OpenCV/cvtypes.h>
+#import "cv.h"
 
 @class IplImageWrapper;
 
